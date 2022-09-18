@@ -8,8 +8,8 @@
 //包括delay_us,delay_ms
 //正点原子@ALIENTEK
 //技术论坛:www.openedv.com
-//创建日期:2019/9/17
-//版本：V1.8
+//创建日期:2010/1/1
+//版本：V1.7
 //版权所有，盗版必究。
 //Copyright(C) 广州市星翼电子科技有限公司 2009-2019
 //All rights reserved
@@ -34,13 +34,9 @@
 //修改OS支持方式,以支持任意OS(不限于UCOSII和UCOSIII,理论上任意OS都可以支持)
 //添加:delay_osrunning/delay_ostickspersec/delay_osintnesting三个宏定义
 //添加:delay_osschedlock/delay_osschedunlock/delay_ostimedly三个函数
-//V1.8修改说明 20150519
-//修正UCOSIII支持时的2个bug：
-//delay_tickspersec改为：delay_ostickspersec
-//delay_intnesting改为：delay_osintnesting
 ////////////////////////////////////////////////////////////////////////////////// 
 	 
-void delay_init(u8 SYSCLK);
+void delay_init(void);
 void delay_ms(u16 nms);
 void delay_us(u32 nus);
 
